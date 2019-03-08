@@ -14,6 +14,7 @@ import { ReuseTabService } from '@delon/abc';
 import { environment } from '@env/environment';
 import { StartupService } from '@core';
 import { API_URL } from '../../../app.constants';
+import { CacheService  } from '@delon/cache';
 // import { LocalStorageService, SessionStorageService } from 'ng2-webstorage';
 
 @Component({
@@ -39,6 +40,7 @@ export class UserLoginComponent implements OnDestroy {
     @Inject(DA_SERVICE_TOKEN) private tokenService: ITokenService,
     private startupSrv: StartupService,
     private menuService: MenuService,
+    private cacheService: CacheService,
     public http: _HttpClient,
     public msg: NzMessageService,
   ) {
@@ -205,8 +207,9 @@ export class UserLoginComponent implements OnDestroy {
                 if(resp.code == 200) {
                   let reponseData:any = resp.data;
                   this.tokenService.set({token:'Bearer '+accessToken,account:reponseData});
-                  console.log(reponseData.menuTreeList);
-                  this.menuService.add(reponseData.menuTreeList);
+                  this.menuService.add(reponseData.ngAlainMenuTreeList);
+                  this.cacheService.remove("account");
+                  this.cacheService.set("account",reponseData,{type:'m',expire:1800});
                 }
               })
                 // 重新获取 StartupService 内容，我们始终认为应用信息一般都会受当前用户授权范围而影响

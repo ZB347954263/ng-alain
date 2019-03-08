@@ -8,6 +8,13 @@ import {
   TitleService,
   ALAIN_I18N_TOKEN,
 } from '@delon/theme';
+import {
+  SocialService,
+  SocialOpenType,
+  ITokenService,
+  DA_SERVICE_TOKEN,
+} from '@delon/auth';
+import { CacheService  } from '@delon/cache';
 import { ACLService } from '@delon/acl';
 import { TranslateService } from '@ngx-translate/core';
 import { I18NService } from '../i18n/i18n.service';
@@ -27,6 +34,8 @@ export class StartupService {
     private menuService: MenuService,
     private translate: TranslateService,
     @Inject(ALAIN_I18N_TOKEN) private i18n: I18NService,
+    @Inject(DA_SERVICE_TOKEN) private tokenService: ITokenService,
+    private cacheService: CacheService,
     private settingService: SettingsService,
     private aclService: ACLService,
     private titleService: TitleService,
@@ -65,7 +74,13 @@ export class StartupService {
             // ACL：设置权限为全量
             this.aclService.setFull(true);
             // 初始化菜单
-            this.menuService.add(res.menu);
+            // this.menuService.add(res.menu);
+            let memu:any[] = [];
+            // let account:any = this.cacheService.get('account');
+            let token:any = this.tokenService.get();
+            if(token != null && token.account != null && token.account.ngAlainMenuTreeList && token.account.ngAlainMenuTreeList != null) {
+              this.menuService.add(token.account.ngAlainMenuTreeList);
+            }
             // 设置页面标题的后缀
             this.titleService.default = '';
             this.titleService.suffix = res.app.name;

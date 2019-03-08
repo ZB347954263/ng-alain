@@ -1,4 +1,107 @@
 {
+  "menu.0d1b0c99-4138-48ba-a088-a042925724d3": "首页",
+
+			"menu.2d5c816b-0eaf-4f27-b477-b935d894390e": "经营主体",
+
+			"menu.6d9fa484-23e2-4848-b1ec-ab3b8db1edcb": "其它信息",
+
+			"menu.e1a90f41-46f8-4f9b-84c3-2c43f77ff464": "经营情况",
+
+			"menu.e15e3d05-894a-45a1-b4a0-1562c14a055d": "土地信息",
+
+			"menu.80acc419-3dac-489d-8e3c-2999e26160ce": "贷款管理",
+
+			"menu.a5ba1a61-1b0f-4427-8560-be0433693ed5": "保险管理",
+
+			"menu.36e675bc-5418-4ee3-a318-6717e985cf44": "财政支持",
+
+			"menu.23c4c7d8-af45-43f0-95fe-6af8a9d02d18": "产品管理",
+
+			"menu.2fc9cc59-4804-424b-bb06-c8fc69d43df2": "信息发布",
+
+			"menu.e6e4d0e5-375a-4b33-9f01-c1e90a3414df": "统计查询",
+
+			"menu.fdab7fab-1c94-4b62-a6f4-508eeed5999e": "系统管理",
+
+			"menu.7ca432a8-e78e-44a8-8a6e-12764702fbf9": "农业企业",
+
+			"menu.eb56dfb4-8ba0-4ae1-821b-f6e428d7f89b": "贷款机构",
+
+			"menu.f6755e48-3b53-4a51-aa7d-4838065db6cf": "土地信息",
+
+			"menu.9e6ef976-d2ee-41e1-b13e-43c41134c7d8": "财政支持政策",
+
+			"menu.1a389cb3-e9ed-43b3-941f-9a1822652772": "保险机构",
+
+			"menu.f7a38086-9269-46ab-8c97-b45dc64c9736": "组织机构",
+
+			"menu.0fc89835-da01-40dd-bb85-30d80959a1b1": "工商信息",
+
+			"menu.3ff02a8f-e332-4e0b-b5d9-16273f3b7da0": "信息分类",
+
+			"menu.9c9da96a-d25d-42a6-b47b-e58cc14277c5": "产品类别",
+
+			"menu.e1181eb9-bfd5-418e-a4b3-719b27bfd6eb": "经营主体查询",
+
+			"menu.6d557366-c35b-447f-9002-3e39a72cef34": "用户管理",
+
+			"menu.9e8b60ba-0f6b-4a8b-94be-c9e8ca48a655": "农业企业经营情况",
+
+			"menu.863704a8-bafb-438c-a9f5-e1c4d67251a8": "家庭农场经营情况",
+
+			"menu.fbfa1292-75eb-47b4-814f-6e8fbecca686": "农民专业合作社经营情况",
+
+			"menu.66295f4f-3939-4d4a-9957-f4c0b47aa2aa": "贷款产品",
+
+			"menu.2ebaf34c-626e-49c3-b9db-227c7d9b14ab": "家庭农场",
+
+			"menu.4a17bde3-78d1-4f9b-bd2a-bd641adf0173": "土地流转",
+
+			"menu.b60af758-8d3a-4680-a112-a28b1c36cee4": "保险产品",
+
+			"menu.e9924b1c-66c3-4938-91a7-f6f3a7466e9b": "财政支持信息",
+
+			"menu.aacd8247-9ed7-4f7c-a37b-a6b6da28ef94": "信息详情",
+
+			"menu.d4db0b03-e1bd-48df-8f8a-b842b4c557f9": "企业经营情况",
+
+			"menu.b60dac55-d62a-4cda-97f4-246a286fbe2f": "角色管理",
+
+			"menu.3f9d1abb-9cc1-452a-8c54-00d9f3fa7ec2": "产品",
+
+			"menu.55d2927b-7680-4e7a-80d8-9e4b95371a3e": "授称情况",
+
+			"menu.27a2bebd-b4d1-48aa-a957-8789f48c9b5a": "家庭农场经营情况",
+
+			"menu.3990d69e-34a0-4a43-8cb2-2feeb3e1a1b5": "财政支持申请",
+
+			"menu.4314bfe8-63bf-48d3-accc-1374be2fe40e": "农民专业合作社",
+
+			"menu.87026aa3-f731-40d1-97e2-81383687464b": "数据字典",
+
+			"menu.4e06a29a-6f48-48aa-8c6b-50a730ea4b1c": "贷款信息",
+
+			"menu.0787159f-b46c-43ea-aa0a-67a8b5565e70": "保险信息",
+
+			"menu.fa7092dc-ded8-4da8-92d9-8ed138d3746e": "贷款信息查询",
+
+			"menu.2ad6a76f-8842-4021-80a8-305cbb91adfd": "保险信息查询",
+
+			"menu.d8ad3fcd-369f-484e-9d35-e51dd4843fb8": "保险申请",
+
+			"menu.dfc50b28-5f60-474c-956a-ffbd3ef8a337": "菜单管理",
+
+			"menu.c644e790-3b55-4d41-a7f1-17bc1e505456": "财政支持查询",
+
+			"menu.34e36547-0de6-4b17-9e7f-f082e8535055": "合作社经营情况",
+
+			"menu.f13b164c-9760-4053-9a8e-c2d8995447f8": "贷款申请",
+
+			"menu.2fcceb83-27cc-4f9b-b4db-20db43fe17e8": "受训情况",
+
+			"menu.67c56266-44b2-457f-a822-ed2c0efbf924": "证书信息",
+
+			"menu.b050b6c9-660d-405a-bcc1-217cba9e1b3b": "示范认定情况",
   "menu.search.placeholder": "搜索：员工、文件、照片等",
   "menu.fullscreen": "全屏",
   "menu.fullscreen.exit": "退出全屏",

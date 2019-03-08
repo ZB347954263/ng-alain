@@ -42,6 +42,7 @@ const routes: Routes = [
       { path: 'pro', loadChildren: './pro/pro.module#ProModule' },
       // Exception
       { path: 'exception', loadChildren: './exception/exception.module#ExceptionModule' },
+      { path: '', loadChildren: './admin/admin.module#AdminModule' },
     ],
   },
   // 全屏布局
