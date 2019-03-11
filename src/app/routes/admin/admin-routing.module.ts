@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AdminListComponent } from './user/list.component';
+import { SysUserListComponent } from './user/list.component';
 
 const routes: Routes = [
   {
@@ -9,7 +9,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: AdminListComponent
+        component: SysUserListComponent
       },
     ],
   }

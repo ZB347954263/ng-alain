@@ -3,13 +3,13 @@ import { NzMessageService, NzModalService } from 'ng-zorro-antd';
 import { _HttpClient } from '@delon/theme';
 import { tap, map } from 'rxjs/operators';
 import { STComponent, STColumn, STData, STChange } from '@delon/abc';
-import { SysUserService } from './sysUser.service';
+import { SellerService } from './seller.service';
 
 @Component({
-  selector: 'app-user-list',
+  selector: 'app-seller-list',
   templateUrl: './list.component.html',
 })
-export class SysUserListComponent implements OnInit, OnDestroy {
+export class SellerListComponent implements OnInit, OnDestroy {
   query: any = {
     pi: 0,
     ps: 10,
@@ -20,16 +20,8 @@ export class SysUserListComponent implements OnInit, OnDestroy {
   data: any[] = [];
   loading = false;
   status = [
-    { index: 0, text: '关闭', value: false, type: 'default', checked: false },
-    {
-      index: 1,
-      text: '运行中',
-      value: false,
-      type: 'processing',
-      checked: false,
-    },
-    { index: 2, text: '已上线', value: false, type: 'success', checked: false },
-    { index: 3, text: '异常', value: false, type: 'error', checked: false },
+    { index: 0, text: '启用', value: false, type: 'success', checked: false },
+    { index: 1, text: '停用', value: false, type: 'error', checked: false },
   ];
   @ViewChild('st')
   st: STComponent;
@@ -67,7 +59,7 @@ export class SysUserListComponent implements OnInit, OnDestroy {
     private http: _HttpClient,
     public msg: NzMessageService,
     private modalSrv: NzModalService,
-    private sysUserService: SysUserService,
+    private sellerService: SellerService,
     private cdr: ChangeDetectorRef
   ) { }
 
@@ -114,7 +106,7 @@ export class SysUserListComponent implements OnInit, OnDestroy {
     if (this.query.status !== null && this.query.status > -1) {
       this.query.statusList.push(this.query.status);
     }
-    this.sysUserService.query(
+    this.sellerService.query(
       {
         page: this.query.pi,
         size: this.query.ps,

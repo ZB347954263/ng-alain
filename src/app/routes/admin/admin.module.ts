@@ -2,20 +2,24 @@ import { NgModule } from '@angular/core';
 
 import { SharedModule } from '@shared';
 import { AdminRoutingModule } from './admin-routing.module';
-import { AdminListComponent } from './user/list.component';
+import { SysUserListComponent } from './user/list.component';
 import { SysUserService } from './user/sysUser.service';
+import { SellerListComponent } from './seller/list.component';
+import { SellerService } from './seller/seller.service';
 
 /**
  * 组件页面
  */
 const COMPONENTS = [
-  AdminListComponent
+  SysUserListComponent,
+  SellerListComponent
 ];
 /**
  * service
  */
 const SSERVICES = [
-  SysUserService
+  SysUserService,
+  SellerService
 ];
 
 @NgModule({
